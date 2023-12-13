@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  background-image: url('../src/assets/home/background-home-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
