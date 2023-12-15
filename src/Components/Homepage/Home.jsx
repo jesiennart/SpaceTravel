@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from './Nav'
 import Main from './Main';
 import Circle from './Circle';
-import './Home.css';
+import '../Homepage/home.css';
 
 function Home() {
     return (

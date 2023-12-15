@@ -5,9 +5,34 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background-image: url('../src/assets/home/background-home-desktop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
 
+@media (max-width: 450px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    position: relative;
+    height: 100dvh;
+    background-image: url('./assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 450px) and (max-width: 1025px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    position: relative;
+    height: 100dvh;
+    background-image: url('./assets/home/background-home-tablet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

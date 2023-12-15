@@ -1,121 +1,550 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-image: url('../../assets/home/background-home-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@media (max-width: 450px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    position: relative;
+    height: 100dvh;
+    background-image: url('../../assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 450px) and (max-width: 1025px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    position: relative;
+    height: 100dvh;
+    background-image: url('../../assets/home/background-home-tablet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .nav {
-    display: flex;
-    align-items: center;
-    margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
 }
 
 .logo {
-    position: fixed;
-    top: 10%;
-    width: 50px;
-    height: 50px;
-    background-image: url('../../assets/shared/logo.svg');
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    transition: all .5s;
+  position: fixed;
+  top: 10%;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/shared/logo.svg");
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .logo:hover {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .line {
-    position: fixed;
-    top: 14%;
-    left: 10%;
-    width: 600px;
-    height: 1px;
-    background-color: #767676;
+  position: fixed;
+  top: 14%;
+  left: 12%;
+  width: 60vw;
+  height: 1px;
+  background-color: #767676;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    height: 100px;
-    top: 8%;
-    right: 0px;
-    padding: 1rem 2rem;
-    backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100px;
+  top: 8%;
+  right: 0px;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(20px);
 }
 
 .menu a {
-    position: relative;
-    margin-left: 3rem;
-    font-size: 1.2rem;
-    font-family: 'Poppins', Courier, monospace;
-    color: aliceblue;
-    text-transform: uppercase;
-    text-decoration: none;
+  position: relative;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", Courier, monospace;
+  color: aliceblue;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .menu a:last-child {
-    margin-right: 7rem;
+  margin-right: 7rem;
 }
 .menu a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .5s;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
 }
 .menu a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.btn-burger {
+  display: none;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .hero {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    height: 400px;
-    width: 400px;
-    font-family: 'Poppins', Courier, monospace;
-    color: aliceblue;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  height: 400px;
+  width: 400px;
+  font-family: "Poppins", Courier, monospace;
+  color: aliceblue;
 }
 
 .hero-text {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 h1 {
-    font-size: 5rem;
-    text-align: center;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Cinzel", Courier, monospace;
 }
 
 .circle {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    height: 250px;
-    width: 250px;
-    background-color: aliceblue;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  height: 250px;
+  width: 250px;
+  background-color: aliceblue;
+  border-radius: 50%;
 }
 
 .circle a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5rem;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: "Poppins", Courier, monospace;
+  color: rgb(119, 119, 119);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.circle a:hover {
+  font-size: 2.5rem;
+}
+.btn-burger,
+.btn-cross {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5%;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/shared/logo.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .menu {
+    right: -500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    min-width: 100vw;
+    min-height: 300px;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+    transition: all 0.5s;
+  }
+
+  .menu a {
+    font-size: 1.6rem;
+    font-family: "Poppins", Courier, monospace;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+  .menu a:last-child {
+    margin: 0;
+  }
+  .btn-burger {
+    display: block;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 3rem;
+    color: aliceblue;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .btn-cross {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2.5rem;
+    color: aliceblue;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .show {
+    right: 0;
+    transition: all 0.5s;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  .hero {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    top: 12%;
+    font-family: "Poppins", Courier, monospace;
+    color: aliceblue;
+  }
+
+  .hero-text {
+    font-size: 6dvw;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 16dvw;
+    text-align: center;
+    font-family: "Cinzel", Courier, monospace;
+  }
+  .text {
+    margin: 0 2rem;
+    padding: 1rem;
+    font-size: 4dvw;
+    text-align: center;
+  }
+
+  .circle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 150px;
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+
+  .circle a {
     position: absolute;
     top: 50%;
     left: 50%;
     padding: 5rem;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
-    font-family: 'Poppins', Courier, monospace;
+    font-size: 1.5rem;
+    font-family: "Poppins", Courier, monospace;
     color: rgb(119, 119, 119);
     text-decoration: none;
-    transition: all .5s;
+    transition: all 0.5s;
+  }
 }
-.circle a:hover {
-    font-size: 2.5rem;
+@media (max-width: 767px) {
+    .nav {
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 5%;
+      width: 50px;
+      height: 50px;
+      background-image: url("../../assets/shared/logo.svg");
+      background-position: center;
+      background-size: cover;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+  
+    .line {
+      display: none;
+    }
+  
+    .menu {
+      right: -800px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      flex-direction: column;
+      position: absolute;
+      top: 5%;
+      min-width: 100vw;
+      min-height: 300px;
+      backdrop-filter: blur(20px);
+      z-index: 1;
+      transition: all 0.5s;
+    }
+  
+    .menu a {
+      font-size: 1.6rem;
+      font-family: "Poppins", Courier, monospace;
+      color: aliceblue;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 0.5rem 0;
+      padding: 0;
+    }
+    .menu a:last-child {
+      margin: 0;
+    }
+    .btn-burger {
+      display: block;
+      position: absolute;
+      top: 5%;
+      right: 10%;
+      font-size: 3rem;
+      color: aliceblue;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .btn-cross {
+      display: block;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      font-size: 2.5rem;
+      color: aliceblue;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .show {
+      right: 0;
+      transition: all 0.5s;
+    }
+    span {
+      font-weight: bold;
+    }
+  
+    .hero {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 1rem;
+      top: 12%;
+      font-family: "Poppins", Courier, monospace;
+      color: aliceblue;
+    }
+  
+    .hero-text {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      font-family: "Cinzel", Courier, monospace;
+    }
+    .text {
+      margin: 0 2rem;
+      padding: 1rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .circle {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 150px;
+      width: 150px;
+      background-color: aliceblue;
+      border-radius: 50%;
+    }
+  
+    .circle a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 5rem;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      font-family: "Poppins", Courier, monospace;
+      color: rgb(119, 119, 119);
+      text-decoration: none;
+      transition: all 0.5s;
+    }
+  }
+@media (min-width: 768px) and (max-width: 1025px) {
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5%;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/shared/logo.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    margin-right: 1rem;
+    top: 0%;
+    width: 620px;
+    min-height: 150px;
+    padding: 0;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    font-family: "Poppins", Courier, monospace;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+  }
+  .btn-burger {
+    display: none;
+  }
+  .btn-cross {
+    display: none;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  .hero {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    font-family: "Poppins", Courier, monospace;
+    color: aliceblue;
+  }
+
+  .hero-text {
+    font-size: 4dvw;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 12dvw;
+    text-align: center;
+    font-family: "Cinzel", Courier, monospace;
+  }
+  .text {
+    margin: 0 2rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .circle {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+
+  .circle a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5rem;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: "Poppins", Courier, monospace;
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  .btn-burger,
+  .btn-cross {
+    display: none;
+  }
 }
