@@ -1,0 +1,244 @@
+#tabs {
+    overflow: hidden;
+  }
+  
+  #tabs menu {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.25rem;
+    z-index: 10;
+  }
+  
+  #tabs button {
+    position: relative;
+    font: inherit;
+    font-size: 0.85rem;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    border-radius: 4px 4px 0 0;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+  
+  #tabs button.active {
+    border: 2px solid aliceblue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  #tab-content {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 30%;
+    left: 0%;
+    width: 90vw;
+    border-radius: 0 4px 4px 4px;
+    color: aliceblue;
+    padding: 1rem;
+  }
+
+  .main-planet {
+    width: 550px;
+    height: 200px;
+  }
+  .title {
+    color: aliceblue;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .description {
+    color: aliceblue;
+    margin-bottom: 1rem;
+  }
+  .line-planet {
+    width: 100%;
+    height: 1px;
+    border: 1px solid rgb(106, 106, 106);
+    margin-bottom: 1rem;
+  }
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.time {
+    font-size: 2rem;
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    
+}
+.photo {
+    margin: 0 10rem;
+    left: 0%;
+    top: 0%;
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width:768px) {
+    #tabs {
+        overflow: hidden;
+      }
+      
+      #tabs menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding-left: 1rem;
+        gap: 0.25rem;
+        z-index: 10;
+      }
+      
+      #tab-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        top: 25%;
+        left: 15%;
+        width: 90vw;
+        border-radius: 0 4px 4px 4px;
+        color: aliceblue;
+        padding: 1rem;
+      }
+    
+      .main-planet {
+        max-width: 300px;
+        max-height: 100%;
+        padding: 0.5rem;
+      }
+      .title {
+        color: aliceblue;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .description {
+        text-align: left;
+        color: aliceblue;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+      .line-planet {
+        width: 100%;
+        height: 1px;
+        border: 1px solid rgb(106, 106, 106);
+        margin-bottom: 1rem;
+      }
+    
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    .time {
+        font-size: 1rem;
+    }
+    .photo {
+        left: 0%;
+        top: 0%;
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (min-width: 768px) and (max-width:1024px) {
+    #tabs {
+        overflow: hidden;
+      }
+      
+      #tabs menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding-left: 2rem;
+        gap: 0.25rem;
+        z-index: 10;
+      }
+      #tabs button {
+        font-size: 2rem;
+      }
+      
+      #tab-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        top: 25%;
+        left: 10%;
+        width: 90vw;
+        border-radius: 0 4px 4px 4px;
+        color: aliceblue;
+        padding: 1rem;
+      }
+    
+      .main-planet {
+        max-width: 450px;
+        max-height: 100%;
+        padding: 0.5rem;
+      }
+      .title {
+        color: aliceblue;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .description {
+        text-align: center;
+        color: aliceblue;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+      }
+      .line-planet {
+        width: 100%;
+        height: 1px;
+        border: 1px solid rgb(106, 106, 106);
+        margin-bottom: 2rem;
+      }
+    
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    .time {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .photo {
+        margin: 0 10rem;
+        left: 0%;
+        top: 0%;
+        width: 300px;
+        height: 300px;
+    }
+}

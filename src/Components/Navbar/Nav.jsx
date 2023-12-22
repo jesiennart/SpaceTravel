@@ -26,8 +26,8 @@ function Nav() {
             <div className='menu'>
                 <a href='/home'><span>00</span> Home</a>
                 <a href='/destinations'><span>01</span> Destination</a>
-                <a href='#'><span>02</span> Crew</a>
-                <a href='#'><span>03</span> Technology</a>
+                <a href='/crew'><span>02</span> Crew</a>
+                <a href='/technology'><span>03</span> Technology</a>
                 <button onClick={HideMobileNav} className='btn-cross'>
                 <ImCross />
             </button>

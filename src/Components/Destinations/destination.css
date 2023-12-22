@@ -1,0 +1,40 @@
+.desth1 {
+    top: 20%;
+    left: 15%;
+    position: absolute;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.number {
+    margin-right: 0.5rem;
+    color: rgb(133, 133, 133);
+}
+
+@media (max-width:768px) {
+    .desth1 {        
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: aliceblue;
+        font-size: 1.2rem;
+    }
+    .number {
+        margin-right: 0.5rem;
+        color: rgb(133, 133, 133);
+    }   
+}
+@media (min-width:768px) and (max-width: 1024px) {
+    .desth1 {        
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+    .number {
+        margin-right: 0.5rem;
+        color: rgb(133, 133, 133);
+    }   
+}

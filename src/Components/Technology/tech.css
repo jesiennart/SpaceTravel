@@ -1,0 +1,222 @@
+#wrapper {
+  overflow: hidden;
+}
+.tech-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  max-width: 200px;
+  z-index: 12;
+}
+
+.button-tech {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(114, 114, 114);
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-family: "Cinzel", Courier, monospace;
+  color: aliceblue;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button-tech:hover {
+  background-color: aliceblue;
+}
+.button-tech.active {
+  background-color: aliceblue;
+  color: black;
+}
+#tech-content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 30%;
+  height: 100vh;
+  width: 100vw;
+}
+.main-tech {
+  position: absolute;
+  left: 20%;
+  width: 400px;
+  color: aliceblue;
+}
+.picture-tech {
+  position: absolute;
+  right: 0%;
+  max-width: 500px;
+  height: 600px;
+  text-align: left;
+  margin-right: 4rem;
+}
+.photo-tech {
+  max-width: 100%;
+  max-height: 100%;
+}
+.name {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  font-family: "Cinzel", Courier, monospace;
+}
+.tech-des {
+  font-size: 1rem;
+  font-family: "Poppins", Courier, monospace;
+}
+
+@media (max-width: 767px) {
+  #wrapper {
+    overflow: hidden;
+    height: 100%;
+  }
+  .tech-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 200px;
+    z-index: 12;
+  }
+
+  .button-tech {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(114, 114, 114);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: "Cinzel", Courier, monospace;
+    color: aliceblue;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .button-tech:hover {
+    background-color: aliceblue;
+  }
+  .button-tech.active {
+    background-color: aliceblue;
+    color: black;
+  }
+  #tech-content {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100dvw;
+    max-height: 100dvh;
+    bottom: 0;
+  }
+  .main-tech {
+    top: 0;
+    left: 40%;
+    padding-right: 1rem;
+    text-align: right;
+    color: aliceblue;
+    max-width: 57%;
+    max-height: 500px;
+  }
+  .name {
+    margin-bottom: 1rem;
+    font-size: 6dvw;
+    font-family: "Cinzel", Courier, monospace;
+  }
+  .tech-des {
+    font-size: 2.5dvw;
+    font-family: "Poppins", Courier, monospace;
+  }
+  .picture-tech {
+    position: relative;
+    max-width: 100%;
+    max-height: 30%;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  .photo-tech {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .tech-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    max-width: 200px;
+    z-index: 12;
+    border: 2ps solid red;
+  }
+
+  .button-tech {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(114, 114, 114);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-family: "Cinzel", Courier, monospace;
+    color: aliceblue;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .button-tech:hover {
+    background-color: aliceblue;
+  }
+  .button-tech.active {
+    background-color: aliceblue;
+    color: black;
+  }
+  #tech-content {
+    display: flex;
+    justify-content: flex-start;
+    top: 25%;
+    max-height: 100vh;
+    max-width: 100vw;
+    /* border: 3px solid white; */
+  }
+  .main-tech {
+    position: absolute;
+    left: 10%;
+    width: 500px;
+    color: aliceblue;
+  }
+  .name {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: "Cinzel", Courier, monospace;
+  }
+  .tech-des {
+    font-size: 1rem;
+    font-family: "Poppins", Courier, monospace;
+  }
+  .picture-tech {
+    right: 0%;
+    max-width: 50%;
+    max-height: 50%;
+    overflow: hidden;
+    top: 31%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .photo-tech {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    object-fit: contain;
+  }
+}

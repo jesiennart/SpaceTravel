@@ -1,41 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-body {
-  height: 100%;
-  background-image: url('../../assets/home/background-home-desktop.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-@media (max-width: 450px) {
-  html {
-    overflow: hidden;
-  }
-  body {
-    position: relative;
-    height: 100dvh;
-    background-image: url('../../assets/home/background-home-mobile.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-@media (min-width: 450px) and (max-width: 1025px) {
-  html {
-    overflow: hidden;
-  }
-  body {
-    position: relative;
-    height: 100dvh;
-    background-image: url('../../assets/home/background-home-tablet.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 .nav {
   display: flex;
   align-items: center;
@@ -61,7 +24,7 @@ body {
   position: fixed;
   top: 14%;
   left: 12%;
-  width: 60vw;
+  width: 32vw;
   height: 1px;
   background-color: #767676;
 }
@@ -154,6 +117,7 @@ h1 {
   transform: translate(-50%, -50%);
   font-size: 2rem;
   font-family: "Poppins", Courier, monospace;
+  font-weight: bold;
   color: rgb(119, 119, 119);
   text-decoration: none;
   transition: all 0.5s;
@@ -300,6 +264,9 @@ h1 {
     text-decoration: none;
     transition: all 0.5s;
   }
+  .circle a:hover {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 767px) {
     .nav {
@@ -427,13 +394,16 @@ h1 {
       position: absolute;
       top: 50%;
       left: 50%;
-      padding: 5rem;
+      padding: 3rem;
       transform: translate(-50%, -50%);
       font-size: 1.5rem;
       font-family: "Poppins", Courier, monospace;
       color: rgb(119, 119, 119);
       text-decoration: none;
       transition: all 0.5s;
+    }
+    .circle a:hover {
+      font-size: 1.8rem;
     }
   }
 @media (min-width: 768px) and (max-width: 1025px) {
