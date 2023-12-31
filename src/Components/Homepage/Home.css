@@ -13,6 +13,7 @@
   background-image: url("../../assets/shared/logo.svg");
   background-position: center;
   background-size: cover;
+  color: none;
   cursor: pointer;
   transition: all 0.5s;
 }

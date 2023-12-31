@@ -3,7 +3,7 @@ import React from 'react';
 function Circle() {
     return (
         <div className='circle'>
-            <a href='#'>EXPLORE</a>
+            <a href='http://localhost:3000/destinations'>EXPLORE</a>
         </div>
     )
 }

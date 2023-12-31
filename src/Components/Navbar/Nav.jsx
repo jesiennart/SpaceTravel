@@ -13,7 +13,6 @@ function Nav() {
         function HideMobileNav() {
             const menu = document.querySelector('.menu')
             const burger = document.querySelector('.btn-burger')
-            const cross = document.querySelector('.btn-cross')
             menu.classList.remove('show')
             burger.style.display = 'block'
         }
@@ -21,7 +20,7 @@ function Nav() {
 
     return (
         <div className='nav'>
-            <div className='logo'></div>
+            <a href='/home'><div className='logo'></div></a>
             <div className='line'></div>
             <div className='menu'>
                 <a href='/home'><span>00</span> Home</a>
