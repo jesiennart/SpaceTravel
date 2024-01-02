@@ -88,7 +88,7 @@
     height: 70px;
     border-radius: 50%;
     border: 1px solid rgb(114, 114, 114);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
     font-family: "Cinzel", Courier, monospace;
     color: aliceblue;
@@ -127,7 +127,7 @@
     font-family: "Cinzel", Courier, monospace;
   }
   .tech-des {
-    font-size: 2.5dvw;
+    font-size: 2.8dvw;
     font-family: "Poppins", Courier, monospace;
   }
   .picture-tech {

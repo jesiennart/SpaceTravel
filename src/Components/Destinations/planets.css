@@ -137,10 +137,11 @@
         margin-bottom: 1rem;
       }
       .description {
+        max-width: 250px;
         text-align: left;
         color: aliceblue;
         margin-bottom: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
       .line-planet {
         width: 100%;
@@ -150,6 +151,7 @@
       }
     
     .bottom {
+      max-width: 250px;
         display: flex;
         justify-content: space-between;
         text-transform: uppercase;
