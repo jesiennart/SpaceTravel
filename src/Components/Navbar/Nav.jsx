@@ -1,6 +1,7 @@
 import React from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -23,10 +24,10 @@ function Nav() {
             <a href='/home'><div className='logo'></div></a>
             <div className='line'></div>
             <div className='menu'>
-                <a href='/home'><span>00</span> Home</a>
-                <a href='/destinations'><span>01</span> Destination</a>
-                <a href='/crew'><span>02</span> Crew</a>
-                <a href='/technology'><span>03</span> Technology</a>
+            <Link to='/home'>Home</Link>
+                <Link to='/destinations'><span>01</span> Destination</Link>
+                <Link to='/crew'><span>02</span> Crew</Link>
+                <Link to='/technology'><span>03</span> Technology</Link>
                 <button onClick={HideMobileNav} className='btn-cross'>
                 <ImCross />
             </button>
