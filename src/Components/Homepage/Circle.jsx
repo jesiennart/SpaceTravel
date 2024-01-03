@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Circle() {
     return (
         <div className='circle'>
-            <a href='http://localhost:3000/destinations'>EXPLORE</a>
+            <Link to='/destinations'>EXPLORE</Link>
         </div>
     )
 }

@@ -21,7 +21,7 @@ function Nav() {
 
     return (
         <div className='nav'>
-            <a href='/home'><div className='logo'></div></a>
+            <Link to='/home'><div className='logo'></div></Link>
             <div className='line'></div>
             <div className='menu'>
             <Link to='/home'>Home</Link>
